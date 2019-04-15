@@ -5,7 +5,7 @@ trigger: none
 
 pr: none
 
-resources:         
+resources:
   containers:
   - container: MyContainer 
     type: ACR
@@ -14,4 +14,6 @@ resources:
     image: $(image_name):$(image_tag)
 
 steps:
-- bash: 'echo "Hello, World!"'
+- bash: echo "Hello, World!"
+  displayName: Bash Script
+  name: Test Script
