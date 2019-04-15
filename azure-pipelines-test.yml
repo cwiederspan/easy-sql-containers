@@ -14,7 +14,4 @@ resources:
     image: $(image_name):$(image_tag)
 
 steps:
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: 'ECHO "Hello, World!"'
+- bash: 'echo "Hello, World!"'
