@@ -4,7 +4,7 @@ GO
 USE MyData
 GO
 
-CREATE TABLE [dbo].[Items](
+CREATE TABLE [dbo].[Items] (
   [Id] [int] IDENTITY(1,1) NOT NULL,
   [Value] [nvarchar](50) NOT NULL,
   CONSTRAINT [PK_Items] PRIMARY KEY CLUSTERED (
