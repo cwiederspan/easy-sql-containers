@@ -17,4 +17,7 @@ docker logs <CONTAINER_ID>
 
 # Prove it works by connecting to it and running some mssql-cli commands
 docker exec -it sql_server_test mssql-cli
+
+# Push the image up to the Azure container registry
+docker push cdwms.azurecr.io/microsoft/mssql-server-linux:2017-latest-cli-with-data
 ```
